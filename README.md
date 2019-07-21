@@ -19,7 +19,7 @@ Notes:
 
 1. In Part 9, the ASP.NET Identity login uses email, not name. so the correct statement is `MigrateShoppingCart(model.Email);`
 
-1. Eventually incorporated tutorial site.css and layout.
+1. Eventually had to incorporated tutorial site.css and the tutorial navbar design to get everything to look right.
 
-1. After getting everything running like the tutorial, there were a couple of small things that I fixed (such as a broken link). I also added the register/login options back to the navbar, because there was no way to logout.
+1. After getting everything running like the tutorial, there were a couple of small things that I fixed (such as a broken link). I also added the register/login options back to the navbar, because there was no way to logout. Also, made the "Admin" link only visible to Administrators.
 
