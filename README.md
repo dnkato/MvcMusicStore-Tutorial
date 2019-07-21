@@ -19,6 +19,4 @@ Notes:
 
 1. In Part 9, login uses email, not name. so the correct statement is `MigrateShoppingCart(model.Email);`
 
-To Do:
-
-* Style the site using bootstrap so that it looks closer to the original demo
+1. Eventually incorporated tutorial site.css and layout. See issues.
