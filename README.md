@@ -13,7 +13,7 @@ Notes:
 
 1. In Part 4 of the Tutorial, the DbContext should be include `public DbSet<Artist> Artists {get; set'}`, or you won't be able to create the StoreManagerController
 
-1. In Part 7, several modifications had to be made since MVC 5 uses ASP.NET Identity. To add support for user roles, I followed the tutorial found at https://gooroo.io/GoorooTHINK/Article/17736/How-to-create-and-assign-roles-in-aspnet-mvc-5/32014#.XTNQ3uhKhhE. Please note that "ASP.NET Configuration site" instructions seen in older versions of the MVC Music Store tutorial do not apply to ASP.NET Identity.
+1. In Part 7, several modifications had to be made since MVC 5 uses ASP.NET Identity. To add support for user roles, I followed the tutorial [How to create and assign roles in asp.net mvc 5](https://gooroo.io/GoorooTHINK/Article/17736/How-to-create-and-assign-roles-in-aspnet-mvc-5/32014#.XTTDZ-hKhhF) by Tasmeer Munir. Please note that "ASP.NET Configuration site" instructions seen in older versions of the MVC Music Store tutorial do not apply to ASP.NET Identity.
 
 1. In Part 8, while trying to create the Shopping Cart Index page using "Add View", I initially got the error "Entity Type 'ShoppingCartViewModel' has no key defined. Define the key for this Entity type." This was resolved by entering a blank value for the "Data Context Class" when creating this view (and all subsequent views).
 
@@ -21,5 +21,8 @@ Notes:
 
 1. Eventually had to incorporated tutorial site.css and the tutorial navbar design to get everything to look right.
 
-1. After getting everything running like the tutorial, there were a couple of small things that I fixed (such as a broken link). I also added the register/login options back to the navbar, because there was no way to logout. Also, made the "Admin" link only visible to Administrators.
+1. After getting everything running like the tutorial, there were a couple of small things that I fixed (such as a broken link). I also added the register/login options back to the navbar, because there was no way to logout. Also, I made the "Admin" link only visible to Administrators.
 
+All in all this was a very fun project to code and I learned quite a bit about ASP.NET MVC from doing it!!!
+
+Special thanks to Microsoft for making such a detailed tutorial available and to Tasmeer Munir for his excellent tutorial [How to create and assign roles in asp.net mvc 5](https://gooroo.io/GoorooTHINK/Article/17736/How-to-create-and-assign-roles-in-aspnet-mvc-5/32014#.XTTDZ-hKhhF)
