@@ -79,6 +79,7 @@ namespace MvcMusicStore.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    MigrateShoppingCart(model.Email);
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -163,6 +164,7 @@ namespace MvcMusicStore.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
                     await this.UserManager.AddToRoleAsync(user.Id, model.UserRole);
+                    MigrateShoppingCart(model.Email);
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
@@ -421,6 +423,15 @@ namespace MvcMusicStore.Controllers
             }
 
             base.Dispose(disposing);
+        }
+
+        private void MigrateShoppingCart(string UserName)
+        {
+            // Associate shopping cart items with logged-in user
+            var cart = ShoppingCart.GetCart(this.HttpContext);
+
+            cart.MigrateCart(UserName);
+            Session[ShoppingCart.CartSessionKey] = UserName;
         }
 
         #region Helpers
