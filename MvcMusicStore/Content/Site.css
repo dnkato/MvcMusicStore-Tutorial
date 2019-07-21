@@ -22,3 +22,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#promotion {
+    height: 300px;
+    width: 700px;
+    background: url(/content/Images/home-showcase.png) no-repeat;
+}
