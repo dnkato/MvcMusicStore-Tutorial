@@ -17,6 +17,9 @@ Notes:
 
 1. In Part 8, while trying to create the Shopping Cart Index page using "Add View", I initially got the error "Entity Type 'ShoppingCartViewModel' has no key defined. Define the key for this Entity type." This was resolved by entering a blank value for the "Data Context Class" when creating this view (and all subsequent views).
 
-1. In Part 9, login uses email, not name. so the correct statement is `MigrateShoppingCart(model.Email);`
+1. In Part 9, the ASP.NET Identity login uses email, not name. so the correct statement is `MigrateShoppingCart(model.Email);`
 
-1. Eventually incorporated tutorial site.css and layout. See issues.
+1. Eventually incorporated tutorial site.css and layout.
+
+1. After getting everything running like the tutorial, there were a couple of small things that I fixed (such as a broken link). I also added the register/login options back to the navbar, because there was no way to logout.
+
