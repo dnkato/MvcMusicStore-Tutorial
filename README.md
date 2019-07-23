@@ -26,3 +26,5 @@ Notes:
 All in all this was a very fun project to code and I learned quite a bit about ASP.NET MVC from doing it!!!
 
 Special thanks to Microsoft for making such a detailed tutorial available and to Tasmeer Munir for his excellent tutorial [How to create and assign roles in asp.net mvc 5](https://gooroo.io/GoorooTHINK/Article/17736/How-to-create-and-assign-roles-in-aspnet-mvc-5/32014#.XTTDZ-hKhhF)
+
+![](MvcMusicStore/Content/Images/ScreenShot.PNG)
