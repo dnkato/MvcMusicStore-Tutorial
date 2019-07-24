@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace MvcMusicStore.Models
 {
-    [Bind(Exclude = "AlbumId")]
+    //[Bind(Exclude = "AlbumId")]
     public class Album
     {
         [ScaffoldColumn(false)]   
